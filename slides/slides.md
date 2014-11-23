@@ -40,18 +40,15 @@ _Web server_ for displaying user's track.
 * Can't work with Bluetooth from Arduino IDE (Eclipse is your friend)
 * Missing GDB 
 
-_(to be continued)_
-
-
 ---
 
 # Problems
 
-* Edison connection is not realible. We have to reconnect it all the time.
-* Edison gets out of storage. (`rm -rf /var/log/journal/` is your friend) 
-* Bluetooth is disabled after each Edison restart. (`rfkill unblock bluetooth` is your friend).
-* ...
-
+* Compilation from Eclipse or Arduino is not very reliable (process termination, connectivity problems and so on).
+* Edison gets out of storage (`rm -rf /var/log/journal/` is your friend) 
+* Bluetooth is disabled after each Edison restart (`rfkill unblock bluetooth` is your friend)
+* We don't know a lot! :)
+* …
 
 ---
 
@@ -61,7 +58,7 @@ _(to be continued)_
 
 **Sunday, 11:00** - decided to switch to Noble in order to get data at least from BLE.
 
-**Sunday, 15:00** - can scan for devices and calculate the distance to nearest iBeacons*
+**Sunday, 15:00** - can scan for devices and calculate distance to nearest beacons using rssi.
 
 * Sources: [github.com/yas375/beacon-tracker](https://github.com/yas375/beacon-tracker)
 
