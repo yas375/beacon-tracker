@@ -23,6 +23,7 @@ DataAnalyzer.prototype.processData = function (data, callback) {
   this.filterData(data, function(filteredData) {
     if (filteredData.length < 3) {
       callback(null, null)
+      return;
     }
 
     distances = []
