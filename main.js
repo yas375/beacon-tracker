@@ -25,9 +25,11 @@ if (!analyzeTimer){
 }
 
 var readTimer;
-if (!readTimer){
-  timer = setInterval( function(){
+if (!readTimer) {
+  timer = setInterval( function() {
+    // TODO: send data to a server. Make sure that the data is sent in appropriate order
     console.log(dataAnalyzer.track);
+    // TODO: Cleanup `dataAnalyzer.track`
   }, 5000);
 }
 
